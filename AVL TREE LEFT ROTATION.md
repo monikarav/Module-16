@@ -1,38 +1,45 @@
-# Experiment 10(e): AVL Tree - Left Rotation
+# Exp No : 16
+# AVL tree-left Rotation
 
-## Aim
-To write a Python function `def leftRotate(self, z)` to perform the left rotation operation in an AVL Tree. Additionally, insert '7' into the existing AVL Tree and perform the necessary rotations to balance it.
+## AIM :
 
----
+To construct an AVL tree using the elements 10, 20, 30, 40, 50, and 25, and print the nodes using appropriate built-in functions.
 
-## Algorithm
+## ALGORITHM :
 
-1. Define the `TreeNode` class to represent each node in the AVL Tree with:
-   - Key value
-   - Left and right child pointers
-   - Height of the node
-2. Define the `AVL_Tree` class to manage AVL Tree operations.
-3. In the `insert()` method:
-   - Insert the key using Binary Search Tree (BST) logic.
-   - Update the height of the current node.
-   - Calculate the balance factor to check if the node is unbalanced.
-   - Based on balance factor and key position, perform the necessary rotations (left or right).
-4. Define the `leftRotate(z)` method:
-   - Let `y = z.right` and `T2 = y.left`.
-   - Make `z` the left child of `y`.
-   - Assign `T2` as the right child of `z`.
-   - Update the heights of `z` and `y`.
-   - Return `y` as the new root of the subtree.
-5. Insert the key '7' using the `insert()` method. If it causes an imbalance, perform the appropriate rotation.
-6. Display the AVL Tree structure after insertion and rotations using preOrder traversal.
+Step 1: Define a class for AVL tree nodes that includes data, height, left, and right pointers.
 
----
+Step 2: Implement AVL tree insertion which maintains the height-balanced property.
 
-## Program
+Step 3: Define utility functions such as:
 
-```python
+a) Getting height of a node.
+
+b) Right and left rotations. c] Getting balance factor.
+
+Step 4: Insert the elements: 10, 20, 30, 40, 50, 25.
+
+Step 5: Perform an in-order traversal to print the nodes of the AVL tree.
+
+## PROGRAM:
+
+```
+from TreeAVL.AVL import AVL  
+
+def getDictTree(self):
+ return self.dict_tree
+
+def Construct_AVL(L):
+    tree=AVL(L)
+    print(getDictTree(tree))
+L=[10 ,20, 30, 40, 50, 25]
 ```
 
-## OUTPUT
+## OUTPUT :
 
-## RESULT
+![image](https://github.com/user-attachments/assets/1f2ace73-d3c0-41bf-aad9-21356ea0b51c)
+
+## RESULT :
+
+Thus the construction an AVL tree using the elements 10, 20, 30, 40, 50, and 25, and print the nodes using appropriate built-in functions was successfully executed.
+
